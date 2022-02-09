@@ -1,0 +1,326 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cuerpo {
+  background-image: url(/img/fondo.png);
+}
+
+.texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.pie {
+  font: size 28px;
+  float: left;
+  text-align: center;
+}
+
+.primero {
+  primero: #111;
+  segundo: red;
+  tercero: green;
+}
+
+.fotoo {
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.foto {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.foti {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.foto:hover {
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+}
+
+.foti:hover {
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 350px;
+}
+
+#galeria img:hover {
+  border: 5px solid #0e0d0d;
+  border-radius: 20px;
+}
+
+.contenido h1 {
+  text-align: center;
+  color: tomato;
+}
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --whatsapp: #39fd08;
+}
+
+.redes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  padding: 0;
+  border-radius: 5px;
+  color: #ffff;
+  line-height: 50px;
+  font-size: 18px;
+  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.redes-container ul:hover a {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+  -webkit-transform: translate(-3px) scale(1.05);
+          transform: translate(-3px) scale(1.05);
+  -webkit-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+  background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+  background: var(--instagram);
+}
+
+.redes-container ul li .whatsapp:hover {
+  background: var(--whatsapp);
+}
+
+.pic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.fotoo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.rainbow-bg {
+  -webkit-animation: rainbow-bg 2.5s linear;
+          animation: rainbow-bg 2.5s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.rainbow {
+  -webkit-animation: rainbow 2.5s linear;
+          animation: rainbow 2.5s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rainbow-bg {
+  100%, 0% {
+    background-color: red;
+  }
+  8% {
+    background-color: #ff7f00;
+  }
+  16% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: chartreuse;
+  }
+  33% {
+    background-color: lime;
+  }
+  41% {
+    background-color: springgreen;
+  }
+  50% {
+    background-color: aqua;
+  }
+  58% {
+    background-color: #007fff;
+  }
+  66% {
+    background-color: blue;
+  }
+  75% {
+    background-color: #7f00ff;
+  }
+  83% {
+    background-color: fuchsia;
+  }
+  91% {
+    background-color: #ff007f;
+  }
+}
+
+@keyframes rainbow-bg {
+  100%, 0% {
+    background-color: red;
+  }
+  8% {
+    background-color: #ff7f00;
+  }
+  16% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: chartreuse;
+  }
+  33% {
+    background-color: lime;
+  }
+  41% {
+    background-color: springgreen;
+  }
+  50% {
+    background-color: aqua;
+  }
+  58% {
+    background-color: #007fff;
+  }
+  66% {
+    background-color: blue;
+  }
+  75% {
+    background-color: #7f00ff;
+  }
+  83% {
+    background-color: fuchsia;
+  }
+  91% {
+    background-color: #ff007f;
+  }
+}
+
+@-webkit-keyframes rainbow {
+  100%, 0% {
+    color: red;
+  }
+  8% {
+    color: #ff7f00;
+  }
+  16% {
+    color: yellow;
+  }
+  25% {
+    color: chartreuse;
+  }
+  33% {
+    color: lime;
+  }
+  41% {
+    color: springgreen;
+  }
+  50% {
+    color: aqua;
+  }
+  58% {
+    color: #007fff;
+  }
+  66% {
+    color: blue;
+  }
+  75% {
+    color: #7f00ff;
+  }
+  83% {
+    color: fuchsia;
+  }
+  91% {
+    color: #ff007f;
+  }
+}
+
+@keyframes rainbow {
+  100%, 0% {
+    color: red;
+  }
+  8% {
+    color: #ff7f00;
+  }
+  16% {
+    color: yellow;
+  }
+  25% {
+    color: chartreuse;
+  }
+  33% {
+    color: lime;
+  }
+  41% {
+    color: springgreen;
+  }
+  50% {
+    color: aqua;
+  }
+  58% {
+    color: #007fff;
+  }
+  66% {
+    color: blue;
+  }
+  75% {
+    color: #7f00ff;
+  }
+  83% {
+    color: fuchsia;
+  }
+  91% {
+    color: #ff007f;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
